@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    /*Hoisting in JavaScript:
+In javaScript before execution memory is allocated.
+*/
+
+    // here we get undefined because a has not given value;
+    console.log(a);
+
+    console.log(getname); // it will return the whole method
+
+    /*here we get undefined because in memory getcity method is undefind.(for arrow methods )
+In this case it behaves like a variable*/
+
+    console.log(getcity);
+
+    var a = 10;
+    console.log(a);
+
+    function getname() {
+      console.log("mahad");
+    }
+
+    var getcity = () => {
+      console.log("Faisalabad");
+    };
+    console.log(getname);
+    console.log(getcity);
+
+    let abc = 10;
+    console.log(abc);
+  </script>
+  <body>
+    <h1>My name is muhammad mahad</h1>
+  </body>
+</html>
